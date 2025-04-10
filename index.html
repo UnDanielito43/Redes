@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Redes DARC</title>
+</head>
+	<body background="image/f1.jpg" text="black">
+			<center><h1>Redes de computadoras</h1></center>
+		<ul>
+			<li>Definicion de redes</li>
+			<li><a href="#tipos">Tipos de redes</a></li>
+			<li><a href="#topo">Topologias de redes</a></li>
+			<li><a href="#medios">Medios de transmision</a></li>
+		</ul>
+			<table width="80%" align="center" border="0">
+				<tr>
+					<td height="120">
+						<img src="image/red.png" height="100%">
+					</td>
+					<td>
+						<p align="justify"><h2>¿Qué es una red de ordenadores?</h2>Una red de ordenadores se refiere a dispositivos de computación interconectados que pueden intercambiar datos y compartir recursos entre sí. Los dispositivos de la red utilizan un sistema de reglas, llamados protocolos de comunicaciones, para transmitir información a través de tecnologías físicas o inalámbricas.</p>
+					</td>
+				</tr>
+			</table>
+<a name="tipos"></a>
+<center><h2>Tipos de redes</h2></center>
+	<h3>Red de área local (LAN)</h3>
+	Conjunto de computadoras que se interconectan en un área no mayor a un edificio o empresa.
+	<h3>Red de área amplia (WAN)</h3>
+	Conecta dispositivos y aplicaciones en ubicaciones geográficamente dispersas. Se utilizan líneas telefónicas, satélites, MPLS, VPN, líneas arrendadas y la nube. 
+	<h3>Red de área metropolitana (MAN)</h3>
+	Conecta dispositivos y aplicaciones en una ciudad. Se utilizan fibra óptica y cable. 
+	<h3>Red de área personal (PAN)</h3>
+	Conecta dispositivos en un área muy pequeña, por lo general una sola habitación o edificio. Se utilizan Bluetooth y WiFi Direct.
+	<h3>Red de área de almacenamiento (SAN)</h3>
+	Conecta dispositivos de almacenamiento. 
+		<center><a href="https://redcomputadora.wordpress.com/2016/06/30/tipos-de-redes-segun-el-tamano/" target="new"><img src="image/tiposredes.jpg" width="200"></a>
+
+<h2>Topologias de redes</h2>
+	<a name="topo"></a>
+		<table width="80%" align="center" border="0">
+				<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología punto a punto</h4>Una red punto a punto, o una topología de puntos, es la red más fácil de entender y el tipo de topología de red más básico. Son simplemente dos nodos que están conectados por un único enlace. Los datos viajan ida y vuelta entre estos dos endpoints. Si bien este es el tipo de red más fácil de configurar, su simplicidad es su propia desventaja. Una topología punto a punto no es aplicable a la mayoría de los casos de uso modernos.
+					</td>
+					<td>
+						</p><img src="image/TPPP.png" height="100%">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología Bus</h4>En una red de anillo, los nodos y enlaces se organizan en un anillo. Cada nodo tiene exactamente dos vecinos. En una red de este tipo, los repetidores se emplean para garantizar que los datos puedan llegar a los nodos que están más alejados entre sí en el anillo. Los datos generalmente fluyen unidireccionalmente en una red de anillo. La información trabaja en ambos sentidos y buscaba una "T" aunque no fuera para esa computadora. Requiere un cable coaxial (Grueso o delgado, din o dan), terminadores, conectores VNS y "T" VNS. Existe un protocolo de transimisión anticolisiones que se llama CMSA.
+					</td>
+					<td>
+						</p><img src="image/TPB.png" height="120">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología de Anillo</h4>Los dispositivos están conectados en un ciclo cerrado, donde cada uno está conectado a dos dipsotivos vecinos, Aunque es eficiente en redes pequeñas y medianas, cualquier fallo en un dispositivo o cable puede interrumpir toda la comunicación. El aparato concentrador que se usa este tipo de red se llama MAU, si quiero conectar computadores se usan cables UTP de tipo RJ45. La caracteística principal de este tipo de red es que solo viaja en un circulos y en un solo sentido, la información que viaja en este tipo de red se llama "token".
+					</td>
+					<td>
+						</p><img src="image/TPA.png" height="120">
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología de Doble Anillo</h4>Las topologías de red describen cómo se organizan y conectan los diferentes dispositivos (nodos) dentro de una red. La topología de doble anillo es una variación de la topología de anillo, en la que dos anillos concéntricos conectan los dispositivos, permitiendo que la comunicación se realice en dos direcciones. En la actualidad se usa FDDI. Usa fibra optica como medio de transmisión. La forma de transmisión es de tipo "Token Ring"
+					</td>
+					<td>
+						</p><img src="image/TPDA.png" height="120">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología de Estrella</h4>En una red de estrella, todos los nodos están conectados a un hub central (HUB, switch [tipo 1,2,3. El tipo 3 es el router] o router). Los nodos se colocan alrededor de ese hub central en una forma que se asemeja aproximadamente a una estrella. Usa cable UTP o USTP categoría 5 o superior, contectores RJ45, y tarjeta de red ethernet. Es fácil de gestionar y si un dispositivo falla, no afecta a los demás, pero si el dispositivo central falla, toda la red se interrumpe. Para que se pueda conectar la computadora se tiene que disponer una tarjeta de red (NIC - network intarface card). Se ve como una estrella pero internamente la información viaja lógicamente como un bus. Existe un protocolo de transimisión anticolisiones que se llama CMSA.
+					</td>
+					<td>
+						</p><img src="image/TPE.png" height="120">
+					</td>
+				</tr>
+					<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología de árbol</h4>Combinación de las topologías estrella y bus, donde los dispositivos están organizadores en niveles jeraquico. Es escalable y fácil de gestionar pero si el nodo principal falla, puede afectar a toda la red. Son varias estrellas unidas por varios aparatos concentradores. Utiliza router o un brige. 
+					</td>
+					<td>
+						</p><img src="image/TPAR.png" height="120">
+					</td>
+				</tr>
+					<tr>
+					<td height="120">
+						<p align="justify"><h4>Topología de Malla</h4>Cada dipsotivio está conectado a todos los demás dispositivos de la red, proporcionando múltiples rutas de comuncación. Ofrece alta fiabilidad y redundancia, pero su implementación es costosa y compleja debido al gran numero de conexiones. Requiere tarjetas de red, contectores UTP (RJ45) o STP, si vas a usar concentradores, serán necesarios varios. Requiere tantas tarjetas de red como computadoras tengas menos 1.
+					</td>
+					<td>
+						</p><img src="image/TPM.png" height="120">
+					</td>
+				</tr>
+				</tr>
+					<tr>
+					<td height="120">
+					<p align="justify"><h4>Topología Híbrida</h4>Mezcla de dos o más topologías, aprovechando las ventajas de cada una. Es flexible y se adapta a diferentes necesidades, pero su implementación puede ser costosa y compleja debido a la combinación de diversas topologías. Se requiere un MAU para el anillo, un switch o router para la estrella, cable coaxial y cable UTP, y un concentrador.
+					</td>
+					<td>
+						</p><img src="image/TPMM.png" height="120">
+					</td>
+				</tr>
+			</table>
+	<h6 align="left"><a href="https://www.ibm.com/mx-es/topics/network-topology" target="new">More Info...</a> ><</h6>
+
+<h2>Medios de transmisión</h2>
+	<a name="medios"></a>
+	<h3>Alambricos/Guiadas</h3>
+		<table width="80%" align="center" border="0">
+				<tr>
+					<td height="120">
+						<p align="justify"><h3>Cable de Par Trenzado (UTP/STP)</h3>El cable de par trenzado es uno de los medios más comunes para la transmisión de datos. Los cables están compuestos por pares de hilos de cobre trenzados entre sí, lo que ayuda a reducir la interferencia electromagnética. Existen versiones apantalladas (STP) y no apantalladas (UTP), dependiendo de la necesidad de protección contra interferencias. Los de categoría 5 llega hasta a 100 gb/s. Los de categoria 6 llegan hasta 1000 gb/s. La velocidad depende del tipo de cable y la velocidad que recorre. Recorre máximo 100 metros. 
+					</td>
+					<td>
+						</p><img src="image/STPUTP.png" height="120">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h3>Cable Coaxial</h3>El cable coaxial tiene un núcleo de cobre que transmite señales, rodeado por aislante, una capa metálica de apantallamiento y una cubierta externa. Es más resistente a las interferencias y a la pérdida de señal que el cable de par trenzado, pero generalmente se utiliza menos hoy en día debido a los avances en otras tecnologías. Soporta 1000 mbps. 
+					</td>
+					<td>
+						</p><img src="image/cc.png" height="120">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h3>Fibra Óptica</h3>La fibra óptica es un medio avanzado de transmisión que utiliza pulsos de luz para enviar datos a través de un filamento de vidrio o plástico. Es inmune a interferencias electromagnéticas y permite una velocidad de transmisión muy alta. Necesita un hilo para transmitir y otro para recibir. Es más barata la fibra que el UTP. Hay dos tipos principales:
+							<ol>
+							<li>Fibra Monomodo: Transmite un solo rayo de luz, lo que permite cubrir largas distancias con mayor velocidad y menor pérdida de señal. Se usa en telecomunicaciones y redes troncales. Se puede transmitir de hasta 40 kilometros.</li>
+							<li>Fibra Multimodo: Permite que varios rayos de luz se transmitan al mismo tiempo, lo cual es ideal para distancias más cortas, como en redes locales. Es más económica, pero menos eficiente a largas distancias. Se puede transmitir información hasta 600 metros (Ej: edificio a edificio).
+							(tranceptor: es un convertidor de señales, convierte la información de electricidad a luz y vicebersa).</li>
+							</ol>
+					</td>
+					<td>
+						</p><img src="image/fo.png" height="120">
+					</td>
+			</table>
+
+<h6 align="left"><a href="https://sobretodoredes.wordpress.com/redes-cableadas/elementos-de-una-red/medios-de-transmision/" target="new">More Info...</a> ><</h6>
+
+			<h3>Inalámbricos/No Orientadas</h3>
+		<table width="80%" align="center" border="0">
+				<tr>
+					<td height="120">
+						<p align="justify"><h3>Infrarrojo</h3>La transmisión por infrarrojo utiliza ondas de luz con una frecuencia superior a la de las microondas, pero inferior a la de la luz visible. Requiere línea de vista directa entre los dispositivos, por lo que no atraviesa obstáculos. Se utiliza en controles remotos, comunicación entre dispositivos cercanos y algunos sistemas de seguridad.
+					</td>
+					<td>
+						</p><img src="image/INF.png" height="120">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h3>Microondas</h3>Las microondas son señales electromagnéticas de alta frecuencia que pueden transmitir datos a larga distancia. Se transmiten a través del aire mediante antenas direccionales. Usadas en telefonía móvil, enlaces punto a punto y redes metropolitanas. Tienen un muy buen alcance pero requieren linea de vista y pueden verse afectadas por el clima.
+					</td>
+					<td>
+						</p><img src="image/MICROONDAS.png" height="120">
+					</td>
+				</tr>
+				<tr>
+					<td height="120">
+						<p align="justify"><h3>Wi-fi</h3>Las redes wifi funcionan mediante la transmisión de ondas de radio en diversas frecuencias para brindar conectividad inalámbrica a redes y a internet a diversas velocidades. Típicamente se les agrupa en rangos de frecuencia de 2.4 GHz, 5 GHz y 6 GHz. Las señales se propagan por el aire, a diferencia de las comunicaciones cableadas que usan cables como el par trenzado o la fibra óptica. 
+					<td>
+						</p><img src="image/WIFI.png" height="120">
+					</td>
+					<tr>
+					<td height="120">
+						<p align="justify"><h3>Ondas satelitales</h3>Este tipo de transmisión utiliza satélites en órbita que reciben, amplifican y retransmiten señales. Permiten la comunicación a nivel global.Se usan en televisión satelital, internet rural, navegación GPS y comunicaciones militares. Cuentan con una gran cobertura geografica. Tienen demasiada latencia. Son muy caros
+					<td>
+						</p><img src="image/MICRO.png" height="120">
+					</td>
+			</table>
+	<h6 align="left"><a href="https://upcommons.upc.edu/bitstream/handle/2117/100918/LM01_R_ES.pdf" target="new">More Info...</a> ><</h6>
+
+	<h6 align="right">Elaborado por <a href="https://sites.google.com/view/
+	reyestic/inicio" target="new">Danielito</a> ><</h6>
+
+	</body>
+</html>
+
+<!-- target new es para definir donde abrirá la pagina del ancla
+align es para la alineación
+a href es para ir a otra pagina
+tr es para las filas
+td es para las columnas
+th es para celdas con encabezados
+<a href="#topo"> es para hacer que esa palabra o lo que está ahí sea un hipervinculo
+<a name="topo"> es donde se encuentra donde quieres ir
+<ol> y <li> en lo que quieres poner numero Ejemplo: 
+<ol>
+	<li>asereje</li>
+</ol>
+<strong></strong> es para las negritas
+
+-->
