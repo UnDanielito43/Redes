@@ -10,10 +10,12 @@
 		<table width="80%" align="center" border="0">
 			<tr>
 				<td height="120">
-					<p align="justify"><h4>Topología punto a punto</h4>Una red punto a punto, o una topología de puntos, es la red más fácil de entender y el tipo de topología de red más básico. Son simplemente dos nodos que están conectados por un único enlace. Los datos viajan ida y vuelta entre estos dos endpoints. Si bien este es el tipo de red más fácil de configurar, su simplicidad es su propia desventaja. Una topología punto a punto no es aplicable a la mayoría de los casos de uso modernos.
+					<p align="justify"><h4>Hub</h4>es un dispositivo de red que permite centralizar 
+						diferentes nodos de una red de computadoras. Su función principal, establecer una 
+						conexión entre un número indefinido de computadoras y permitir el intercambio de datos.
 				</td>
 				<td>
-					</p><img src="image/TPPP.png" height="100%">
+					</p><img src="image/hub.png" height="100%">
 				</td>
 			</tr>
 			<tr>
@@ -23,93 +25,8 @@
 				<td>
 					</p><img src="image/TPB.png" height="120">
 				</td>
-			</tr>
-			<tr>
-				<td height="120">
-					<p align="justify"><h4>Topología de Anillo</h4>Los dispositivos están conectados en un ciclo cerrado, donde cada uno está conectado a dos dipsotivos vecinos, Aunque es eficiente en redes pequeñas y medianas, cualquier fallo en un dispositivo o cable puede interrumpir toda la comunicación. El aparato concentrador que se usa este tipo de red se llama MAU, si quiero conectar computadores se usan cables UTP de tipo RJ45. La caracteística principal de este tipo de red es que solo viaja en un circulos y en un solo sentido, la información que viaja en este tipo de red se llama "token".
-				</td>
-				<td>
-					</p><img src="image/TPA.png" height="120">
-			</tr>
-			<tr>
-				<td height="120">
-					<p align="justify"><h4>Topología de Doble Anillo</h4>Las topologías de red describen cómo se organizan y conectan los diferentes dispositivos (nodos) dentro de una red. La topología de doble anillo es una variación de la topología de anillo, en la que dos anillos concéntricos conectan los dispositivos, permitiendo que la comunicación se realice en dos direcciones. En la actualidad se usa FDDI. Usa fibra optica como medio de transmisión. La forma de transmisión es de tipo "Token Ring"
-				</td>
-				<td>
-					</p><img src="image/TPDA.png" height="120">
-				</td>
-			</tr>
-			<tr>
-				<td height="120">
-					<p align="justify"><h4>Topología de Estrella</h4>En una red de estrella, todos los nodos están conectados a un hub central (HUB, switch [tipo 1,2,3. El tipo 3 es el router] o router). Los nodos se colocan alrededor de ese hub central en una forma que se asemeja aproximadamente a una estrella. Usa cable UTP o USTP categoría 5 o superior, contectores RJ45, y tarjeta de red ethernet. Es fácil de gestionar y si un dispositivo falla, no afecta a los demás, pero si el dispositivo central falla, toda la red se interrumpe. Para que se pueda conectar la computadora se tiene que disponer una tarjeta de red (NIC - network intarface card). Se ve como una estrella pero internamente la información viaja lógicamente como un bus. Existe un protocolo de transimisión anticolisiones que se llama CMSA.
-				</td>
-				<td>
-					</p><img src="image/TPE.png" height="120">
-				</td>
-			</tr>
-				<tr>
-				<td height="120">
-					<p align="justify"><h4>Topología de árbol</h4>Combinación de las topologías estrella y bus, donde los dispositivos están organizadores en niveles jeraquico. Es escalable y fácil de gestionar pero si el nodo principal falla, puede afectar a toda la red. Son varias estrellas unidas por varios aparatos concentradores. Utiliza router o un brige. 
-				</td>
-				<td>
-					</p><img src="image/TPAR.png" height="120">
-				</td>
-			</tr>
-				<tr>
-				<td height="120">
-					<p align="justify"><h4>Topología de Malla</h4>Cada dipsotivio está conectado a todos los demás dispositivos de la red, proporcionando múltiples rutas de comuncación. Ofrece alta fiabilidad y redundancia, pero su implementación es costosa y compleja debido al gran numero de conexiones. Requiere tarjetas de red, contectores UTP (RJ45) o STP, si vas a usar concentradores, serán necesarios varios. Requiere tantas tarjetas de red como computadoras tengas menos 1.
-				</td>
-				<td>
-					</p><img src="image/TPM.png" height="120">
-				</td>
-			</tr>
-			</tr>
-				<tr>
-				<td height="120">
-				<p align="justify"><h4>Topología Híbrida</h4>Mezcla de dos o más topologías, aprovechando las ventajas de cada una. Es flexible y se adapta a diferentes necesidades, pero su implementación puede ser costosa y compleja debido a la combinación de diversas topologías. Se requiere un MAU para el anillo, un switch o router para la estrella, cable coaxial y cable UTP, y un concentrador.
-				</td>
-				<td>
-					</p><img src="image/TPMM.png" height="120">
-				</td>
-			</tr>
-		</table>
-<h6 align="left"><a href="https://www.ibm.com/mx-es/topics/network-topology" target="new">More Info...</a> ><</h6>
-
-<h2>Medios de transmisión</h2>
-<a name="medios"></a>
-<h3>Alambricos/Guiadas</h3>
-	<table width="80%" align="center" border="0">
-			<tr>
-				<td height="120">
-					<p align="justify"><h3>Hub</h3>El cable de par trenzado es uno de los medios más comunes para la transmisión de datos. Los cables están compuestos por pares de hilos de cobre trenzados entre sí, lo que ayuda a reducir la interferencia electromagnética. Existen versiones apantalladas (STP) y no apantalladas (UTP), dependiendo de la necesidad de protección contra interferencias. Los de categoría 5 llega hasta a 100 gb/s. Los de categoria 6 llegan hasta 1000 gb/s. La velocidad depende del tipo de cable y la velocidad que recorre. Recorre máximo 100 metros. 
-				</td>
-				<td>
-					</p><img src="image/STPUTP.png" height="120">
-				</td>
-			</tr>
-			<tr>
-				<td height="120">
-					<p align="justify"><h3>Cable Coaxial</h3>El cable coaxial tiene un núcleo de cobre que transmite señales, rodeado por aislante, una capa metálica de apantallamiento y una cubierta externa. Es más resistente a las interferencias y a la pérdida de señal que el cable de par trenzado, pero generalmente se utiliza menos hoy en día debido a los avances en otras tecnologías. Soporta 1000 mbps. 
-				</td>
-				<td>
-					</p><img src="image/cc.png" height="120">
-				</td>
-			</tr>
-			<tr>
-				<td height="120">
-					<p align="justify"><h3>Fibra Óptica</h3>La fibra óptica es un medio avanzado de transmisión que utiliza pulsos de luz para enviar datos a través de un filamento de vidrio o plástico. Es inmune a interferencias electromagnéticas y permite una velocidad de transmisión muy alta. Necesita un hilo para transmitir y otro para recibir. Es más barata la fibra que el UTP. Hay dos tipos principales:
-						<ol>
-						<li>Fibra Monomodo: Transmite un solo rayo de luz, lo que permite cubrir largas distancias con mayor velocidad y menor pérdida de señal. Se usa en telecomunicaciones y redes troncales. Se puede transmitir de hasta 40 kilometros.</li>
-						<li>Fibra Multimodo: Permite que varios rayos de luz se transmitan al mismo tiempo, lo cual es ideal para distancias más cortas, como en redes locales. Es más económica, pero menos eficiente a largas distancias. Se puede transmitir información hasta 600 metros (Ej: edificio a edificio).
-						(tranceptor: es un convertidor de señales, convierte la información de electricidad a luz y vicebersa).</li>
-						</ol>
-				</td>
-				<td>
-					</p><img src="image/fo.png" height="120">
-				</td>
 		</table>
 Hub <br>
-
 Switch <br>
 Routers <br>
 Transceptor <br>
